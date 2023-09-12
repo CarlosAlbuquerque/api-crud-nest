@@ -24,6 +24,7 @@ export class UserController {
     userEntity.id = uuid();
     userEntity.name = user.name;
     userEntity.email = user.email;
+    userEntity.level = user.level;
     userEntity.password = user.password;
 
     this.userRepository.create(userEntity);
